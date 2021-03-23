@@ -14,7 +14,7 @@ export default function useForm(initial = {}) {
     }
     // If the input is a file (for file upload), it requires an array of files
     if (type === 'file') {
-      value[0] = e.target.files;
+      [value] = e.target.files;  // Array destructuring. First item gets assigned to the value variable.
     }
     setInputs({  // An object of multiple pieces of state
       // copy the existing state
