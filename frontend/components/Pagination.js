@@ -7,7 +7,7 @@ import DisplayError from './ErrorMessage';
 import { perPage } from '../config';
 
 //Don't need to name the below query since there is no arguments or variables but you can name it anyway.
-const PAGINATION_QUERY = gql`
+export const PAGINATION_QUERY = gql`
   query PAGINATION_QUERY {  
     _allProductsMeta {
       count
