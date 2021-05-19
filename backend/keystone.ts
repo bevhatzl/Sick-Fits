@@ -5,6 +5,7 @@ import { withItemData, statelessSessions } from '@keystone-next/keystone/session
 import { OrderItem } from './schemas/OrderItem';
 import { Order } from './schemas/Order';
 import { User } from './schemas/User';
+import { Role } from './schemas/Role';
 import { Product } from './schemas/Product';
 import { ProductImage } from './schemas/ProductImage';
 import 'dotenv/config';
@@ -60,7 +61,8 @@ export default withAuth(config({
         ProductImage,
         CartItem,
         OrderItem,
-        Order
+        Order,
+        Role
     }),
     extendGraphqlSchema: extendGraphqlSchema,
     ui: {
